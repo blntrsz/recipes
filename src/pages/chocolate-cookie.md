@@ -1,4 +1,3 @@
-
 ---
 title: Chocolate Cookie
 setup: |

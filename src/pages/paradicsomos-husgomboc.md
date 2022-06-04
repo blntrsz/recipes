@@ -1,4 +1,3 @@
-
 ---
 title: Paradicsomos húsgombóc
 setup: |
