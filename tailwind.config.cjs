@@ -18,13 +18,13 @@ module.exports = {
           fontSize: theme("fontSize.xl"),
           marginBottom: "1.5rem",
           marginTop: "1rem",
-          color: "#99f6e4",
+          color: "#fed7aa",
         },
         h3: {
           fontSize: theme("fontSize.lg"),
           marginBottom: "1.5rem",
           marginTop: "1rem",
-          color: "#99f6e4",
+          color: "#fed7aa",
         },
         p: {
           marginBottom: "1rem",
