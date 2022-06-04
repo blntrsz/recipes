@@ -1,0 +1,26 @@
+---
+import Base from "../layouts/Base.astro";
+import Search from "../utils/Search.astro";
+
+const posts = await Astro.glob('./*.md')
+---
+
+<Base>
+	<span>Keresés a receptek között:</span>
+	<Search  />
+	<div class="flex relative mb-4">
+		<input class="bg-zinc-400 px-4 py-2 text-zinc-900 w-full rounded-md" id="search" />
+		<button class="clear-search hidden p-4 mt-1 mr-1 bg-red-600 rounded-lg py-1 absolute right-0">x</button>
+	</div>
+	<ul id="artlist">
+		{posts.map(post =>
+			<li class="w-full">
+				<a href={post.url}>
+				<div class="p-2 rounded-md mb-2 bg-zinc-800 hover:bg-zinc-700">
+						{post.frontmatter.title}
+						</div>
+					</a>
+			</li>
+		)}
+	</ul>
+</Base>

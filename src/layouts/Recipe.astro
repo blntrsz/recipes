@@ -1,0 +1,23 @@
+---
+import Base from './Base.astro'
+import './recipe.css'
+
+const { content: { title } } = Astro.props
+---
+
+<Base>
+  <header>
+    <a href="/">&lt;| Vissza a főoldalra</a>
+    <h1 class="underline text-4xl">{title}</h1>
+  </header>
+  <main>
+    <article>
+      <slot />
+    </article>
+  </main>
+  <style>
+    ul {
+      background-color: brown;
+    }
+  </style>
+</Base>
